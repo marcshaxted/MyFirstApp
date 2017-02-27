@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.exampe.myfirstapp">
 
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="15" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DisplayMessageActivity"></activity>
+        <activity android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:name=".DisplayMessageActivity" />
     </application>
 
 </manifest>
